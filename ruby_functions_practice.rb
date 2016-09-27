@@ -53,6 +53,17 @@ def number_to_short_month_name(month_number)
 end
 
 def cube_volume_from_side(side)
-	return side**3
+	return side ** 3
 end
 
+def sphere_volume_from_radius(radius)
+   return (4 * Math::PI * radius** 2).round(2)
+end
+
+def fahrenheit_to_celcius(fahrenheit)
+    return ((fahrenheit - 32) * 5.0 / 9.0).round(2)
+end
+
+def miles_to_kilometres(miles)
+    return (1.60934 * miles).round(2)
+end
