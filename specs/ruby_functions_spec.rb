@@ -14,7 +14,7 @@ class Functions_Practice < MiniTest::Test
     add_result = add( 1, 2 )
     assert_equal( 3, add_result )
   end
-
+ 
   def test_subtract()
     subtract_result = subtract( 10, 5 )
     assert_equal( 5, subtract_result )
