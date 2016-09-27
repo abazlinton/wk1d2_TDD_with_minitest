@@ -80,7 +80,7 @@ class Functions_Practice < MiniTest::Test
     #Try using Ruby's PI value!
     def test_volume_of_sphere()
         volume_of_sphere = sphere_volume_from_radius(4.44)
-        volume_expected = 247.72840374323097
+        volume_expected = 366.63803753998091
         volume_expected = volume_expected.round(2)
         assert_equal( volume_expected, volume_of_sphere)
     end
