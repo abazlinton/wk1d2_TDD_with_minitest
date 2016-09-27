@@ -48,14 +48,15 @@ class Functions_Practice < MiniTest::Test
   #   assert_equal( 3, add_result )
   # end
 
-  def test_number_to_full_name()
-    first_month_string = number_to_full_month_name( 1 )
-    third_month_string = number_to_full_month_name( 3 )
-    ninth_month_string = number_to_full_month_name( 9 )
-    assert_equal( "January", first_month_string )
-    assert_equal( "March", third_month_string ) 
-    assert_equal( "September", ninth_month_string )
-  end
+  # def test_number_to_full_name()
+  #   first_month_string = number_to_full_month_name( 1 )
+  #   third_month_string = number_to_full_month_name( 3 )
+  #   ninth_month_string = number_to_full_month_name( 9 )
+  #   assert_equal( "January", first_month_string )
+  #   assert_equal( "March", third_month_string ) 
+  #   assert_equal( "September", ninth_month_string )
+
+  # end
 
   # def test_substring()
   #   first_month_string = number_to_short_month_name( 1 )
@@ -69,24 +70,26 @@ class Functions_Practice < MiniTest::Test
   #Further
 
   #Given the length of a side of a cube calculate the volume 
-  def test_volume_of_cube()
+    def test_volume_of_cube()
+        volume_of_cube = cube_volume_from_side(3.5)
+        assert_equal( 42.875, volume_of_cube )
 
-  end
+    end
 
-  #Given the radius of a sphere calculate the volume
-  #Try using Ruby's PI value!
-  def test_volume_of_sphere()
+    #Given the radius of a sphere calculate the volume
+    #Try using Ruby's PI value!
+    def test_volume_of_sphere()
 
-  end
+    end
 
-  #You can add your own converters
-  def test_fahrenheit_to_celsius()
+    #You can add your own converters
+    def test_fahrenheit_to_celsius()
 
-  end
+    end
 
-  def test_miles_to_kilometres
+    def test_miles_to_kilometres
 
-  end
+    end
 
 
 end
