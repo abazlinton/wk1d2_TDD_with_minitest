@@ -80,24 +80,25 @@ class Functions_Practice < MiniTest::Test
     #Try using Ruby's PI value!
     def test_volume_of_sphere()
         volume_of_sphere = sphere_volume_from_radius(4.44)
-        volume_expected = 366.63803753998091
-        volume_expected = volume_expected.round(2)
-        assert_equal( volume_expected, volume_of_sphere)
+        #volume_expected = 366.63803753998091
+        #Better not to do rounding here. Keep test simple!!
+        #volume_expected = volume_expected.round(2)
+        assert_equal( 366.64, volume_of_sphere)
     end
 
     #You can add your own converters
     def test_fahrenheit_to_celsius()
         celcius = fahrenheit_to_celcius(84)
-        celcius_expected = 28.8889
-        celcius_expected = celcius_expected.round(2)
-        assert_equal(celcius_expected, celcius)
+        #celcius_expected = 28.8889
+        #celcius_expected = celcius_expected.round(2)
+        assert_equal(28.89, celcius)
     end
 
     def test_miles_to_kilometres()
         kilometres = miles_to_kilometres(15)
-        kilometres_expected = 24.1402
-        kilometres_expected =  kilometres_expected.round(2)
-        assert_equal(kilometres_expected, kilometres)
+        #kilometres_expected = 24.1402
+        #kilometres_expected =  kilometres_expected.round(2)
+        assert_equal(24.14, kilometres)
     end
 
 
